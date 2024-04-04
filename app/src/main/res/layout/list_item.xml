@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:id="@+id/listItemWrapper"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/messageUser"
+        android:textStyle="normal|bold">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/messageTime"
+        android:textStyle="normal">
+
+    </TextView>
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/messageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageUser"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:angle="8dp"
+        app:arrowWidth="8dp"
+        app:arrowPosition="10dp"
+        app:arrowLocation="left"
+        app:bubbleColor="#0066ff"
+        app:arrowCenter="true"
+        >
+
+    </com.github.library.bubbleview.BubbleTextView>
+</RelativeLayout>
